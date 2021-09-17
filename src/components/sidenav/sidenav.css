@@ -1,0 +1,86 @@
+.sidenav {
+    width: 100%;
+    position: relative;
+    height: 100vh;
+}
+.sidenav .title {
+    color: rgb(255, 209, 0);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-family: 'Righteous', cursive;
+}
+.sidenav .sidenavFooter {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 1rem;
+}
+.sidenav h5 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    color: tomato;
+}
+.sidenav p {
+    font-size: 10px;
+    color: white;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    justify-self: center;
+    text-align: left;
+}
+
+.sidenav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    margin-top: 3rem;
+    background-color: rgba(0, 0, 0, 0.171);
+}
+.sidenav ul li {
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.sidenav ul li:hover {
+    background-color: rgba(0, 0, 0, 0.438);
+}
+
+.sidenav ul li h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    color: white;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.resultsWrapper {
+    height: 500px;
+    overflow-y: auto;
+}
+.resultsWrapper ul li {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 0.4fr 1.6fr;
+    grid-template-rows: 0.2fr;
+    gap: 0px 0px;
+    grid-template-areas: 'img info';
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.resultsWrapper ul li img {
+    grid-area: img;
+    width: 100px;
+}
+.resultsWrapper ul li img {
+    grid-area: img;
+    width: 100px;
+}
+.resultsWrapper ul li .info {
+    grid-area: info;
+}

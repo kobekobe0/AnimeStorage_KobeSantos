@@ -1,0 +1,82 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    height: 100vh;
+    padding-top: 3vh;
+}
+::-webkit-scrollbar {
+    opacity: 0;
+    width: 1px;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.pageContainer {
+    display: grid;
+    grid-template-columns: 15vw 60vw 25vw;
+}
+@media only screen and (max-width: 600px) {
+    .pageContainer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .pageContainer {
+        display: flex;
+        flex-direction: row;
+    }
+    .action {
+        display: none;
+    }
+}
+
+img {
+    width: 150px;
+}
+
+.animeDetails-title {
+    text-decoration: none;
+    color: rgb(18, 17, 85);
+}
+
+/*Watchlist*/
+
+.action {
+    background-color: rgb(204, 204, 204);
+}
+.watchlist {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-gap: 2rem;
+    overflow-y: scroll;
+    height: 95vh;
+}
+.cards {
+    height: 450px;
+    background-color: beige;
+}
+.cards img {
+    width: 200px;
+    height: 280px;
+    object-fit: cover;
+}
+.cards h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.cardsButtons {
+}
+
+/*SEARCH STYLE*/
+.animeList {
+    overflow-y: scroll;
+    height: 90vh;
+}

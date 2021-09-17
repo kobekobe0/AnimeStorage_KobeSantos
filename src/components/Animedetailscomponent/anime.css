@@ -1,0 +1,70 @@
+.detailsWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.animeDetails {
+    display: grid;
+    grid-template-columns: 0.1fr 1.4fr 1.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        'close img info info'
+        'synopsis synopsis synopsis synopsis';
+
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.close {
+    grid-area: close;
+    display: flex;
+    justify-content: center;
+    align-item: center;
+    margin-top: 2rem;
+}
+.close .backButton:hover {
+    transform: scale(1.1);
+    transition: all 0.2s;
+    color: blue;
+}
+.img {
+    grid-area: img;
+    display: flex;
+    justify-content: center;
+}
+.img img {
+    width: 300px%;
+}
+.info {
+    grid-area: info;
+}
+.info h1 {
+    font-size: 5rem;
+}
+.info h5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    text-align: center;
+}
+.synopsis {
+    grid-area: synopsis;
+    padding-top: 1rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    .animeDetails {
+        display: flex;
+        flex-direction: column;
+    }
+    .info h1 {
+        font-size: 3rem;
+    }
+}
